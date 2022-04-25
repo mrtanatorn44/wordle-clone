@@ -19,7 +19,13 @@ button {
 }
 
 .tile {
-  
+  height: 8.5vh;
+  max-width: 8.5vh;
+}
+
+.xtile {
+  height: 6vh;
+  max-width: 6vh;
 }
 
 .key {
@@ -35,7 +41,9 @@ button {
   h4 {
     font-size: 1.1rem;
   }
-
+  svg { 
+    font-size: 18px; 
+  }
   .key {
     height: 8vh;
     max-width: 4.5vh;
