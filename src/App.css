@@ -64,6 +64,11 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+  .mobile-hide {
+    visibility: hidden;
+    width: 0vw;
+    height: 0vh;
+  }
   h4 {
     font-size: 1.1rem;
   }
@@ -91,7 +96,6 @@ button {
 .shake {
   animation: shake .5s;
 }
-
 @keyframes shake {
   15% {
     transform: translateX(6px)
@@ -114,11 +118,9 @@ button {
 }
 
 /* Flip Tile */
-
 .flip {
   animation: flip 0.5s;
 }
-
 @keyframes flip {
   0% {
     transform: rotateX(0deg);
@@ -128,5 +130,21 @@ button {
   }
   100% {
     transform: rotateX(0deg);
+  }
+}
+
+/* Zoom Tile */
+.zoom {
+  animation: zoom 0.1s;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
   }
 }
