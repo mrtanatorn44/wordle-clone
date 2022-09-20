@@ -1,0 +1,160 @@
+* {
+  margin:0;
+  padding:0;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+  color: white;
+  background: black;
+  overflow: hidden;
+}
+
+button {
+  color: white;
+}
+
+.row {
+  width: 100%;
+}
+
+.tile {
+  height: 8.5vh;
+  max-width: 8.5vh;
+}
+
+.xtile {
+  height: 6vh;
+  max-width: 6vh;
+}
+
+.key {
+  height: 8vh;
+  max-width: 6vh;
+}
+.fkey {
+  height: 8vh;
+  max-width: 9vh;
+}
+
+.vh-7 {
+  height: 7vh;
+}
+.vh-30 {
+  height: 30vh;
+}
+.vh-63 {
+  height: 63vh;
+}
+
+.w-10 {
+  width: 10%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-90 {
+  width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-hide {
+    visibility: hidden;
+    width: 0vw;
+    height: 0vh;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  svg { 
+    font-size: 18px; 
+  }
+  .key {
+    height: 8vh;
+    max-width: 4.5vh;
+  }
+  .fkey {
+    height: 8vh;
+    max-width: 7vh;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .w-30 {
+    width: 90%;
+  }
+}
+
+/* Button Shake */
+.shake {
+  animation: shake .5s;
+}
+@keyframes shake {
+  15% {
+    transform: translateX(6px)
+  }
+  30% {
+    transform: translateX(-6px)
+  }
+  45% {
+    transform: translateX(4px)
+  }
+  60% {
+    transform: translateX(-4px)
+  }
+  75% {
+    transform: translateX(2px)
+  }
+  90% {
+    transform: translateX(-2px)
+  }
+}
+
+/* Flip Tile */
+.flip {
+  animation: flip 0.5s;
+}
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Zoom Tile */
+.zoom {
+  animation: zoom 0.1s;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
