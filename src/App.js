@@ -82,7 +82,9 @@ function App() {
             console.log(randomIndex)
             var wordleAnswer = text.split('\r\n')[randomIndex];
             setAnswer(wordleAnswer);
-            console.log(text.split('\n'))
+            console.log(text[0])
+            console.log(text[0].split('\n'))
+            console.log(text[0].split('\r\n'))
             console.log("Answer is :", wordleAnswer)
           }
       );
