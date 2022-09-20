@@ -71,8 +71,11 @@ function App() {
 
   useEffect(() => {
     // it will run twice, but dont worry. we still get lastest answer.
+    console.log('useEffect!');
+    console.log('useEffect!');
     if (answer === null) {
-      fetch(wordsFile)
+      try {
+        fetch(wordsFile)
         .then(r => r.text())
           .then(text => {
             var randomIndex = Math.floor(Math.random() * 5757);
@@ -81,6 +84,9 @@ function App() {
             console.log("Answer is :", wordleAnswer)
           }
       );
+      } catch(e){
+          setError({ error: e.message, status: e.status })
+      }
     }
 
     // load data on local storage
