@@ -1,6 +1,6 @@
 ## Project in progress
 
-Test it on : https://mrtanatorn44.github.io/wordle-clone/
+Test it with Git IO on : https://mrtanatorn44.github.io/wordle-clone/ \
 How to host react on Git io : https://github.com/gitname/react-gh-pages
 
 In the project directory, you can run:
