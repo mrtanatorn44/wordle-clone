@@ -71,20 +71,17 @@ function App() {
 
   useEffect(() => {
     // it will run twice, but dont worry. we still get lastest answer.
-    console.log('useEffect!');
+    // console.log('useEffect!');
     if (answer === null) {
       try {
         fetch(wordsFile)
         .then(r => r.text())
           .then(text => {
-            console.log(text)
+            // console.log(text)
             var randomIndex = Math.floor(Math.random() * 5757);
-            console.log(randomIndex)
-            var wordleAnswer = text.split('\r\n')[randomIndex];
+            // console.log(randomIndex)
+            var wordleAnswer = text.split('\n')[randomIndex];
             setAnswer(wordleAnswer);
-            console.log(text[0])
-            console.log(text[0].split('\n'))
-            console.log(text[0].split('\r\n'))
             console.log("Answer is :", wordleAnswer)
           }
       );
