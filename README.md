@@ -1,3 +1,8 @@
+## Project in progress
+
+Test it on : https://mrtanatorn44.github.io/wordle-clone/
+How to host react on Git io : https://github.com/gitname/react-gh-pages
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
